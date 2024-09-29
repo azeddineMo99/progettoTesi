@@ -1,23 +1,48 @@
 // This file contains the boilerplate to execute your React app.
 // If you want to modify your application's content, start in "index.js"
 
-import {ReactInstance} from 'react-360-web';
+import {Location, ReactInstance, Surface, Environment} from 'react-360-web';
+
+let r360;
+let myLoginSurface;
+let mySceneSurface;
 
 function init(bundle, parent, options = {}) {
-  const r360 = new ReactInstance(bundle, parent, {
+  r360 = new ReactInstance(bundle, parent, {
     // Add custom options here
     fullScreen: true,
     ...options,
   });
+  
+  myLoginSurface = new Surface(800, 500, Surface.SurfaceShape.Cylinder, );
+  myLoginSurface.setAngle(0, 0);
 
-  // Render your app content to the default cylinder surface
+  mySceneSurface = new Surface(4680, 2400, Surface.SurfaceShape.Cylinder,);
+
+  
   r360.renderToSurface(
-    r360.createRoot('progettoTesi', { /* initial props */ }),
-    r360.getDefaultSurface()
+    r360.createRoot('App',{}),
+    mySceneSurface,
   );
 
-  // Load the initial environment
-  r360.compositor.setBackground(r360.getAssetURL('360_world.jpg'));
+
 }
 
-window.React360 = {init};
+
+function changeToScene() {
+
+  myLoginSurface.detach();
+  mySceneSurface = new Surface(4680, 2400, Surface.SurfaceShape.Cylinder,);
+
+
+  myLoginSurface.detach();
+  r360.renderToSurface(
+    r360.createRoot('App'),
+    mySceneSurface
+  );
+  
+
+ }
+ window.React360 = {init, changeToScene};
+
+

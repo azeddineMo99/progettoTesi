@@ -1,0 +1,159 @@
+{
+   "default": {
+     "firstSceneId": 0
+   },
+   "accesso": 
+    {
+      "sfondo": "panorama/IMG_20240926_152652_00_002_PureShot.jpg",
+      "primo": "University_of_Bologna_0929135714_obj/University_of_Bologna_0929135714.obj",
+      "secondo": "University_of_Bologna_0929135714_obj/University_of_Bologna_0929135714.mtl",
+      "png": "University_of_Bologna_0929135714_obj/University_of_Bologna_0929135714.png",
+      "prima": "login/accedi.jpg"
+
+    },
+   "scenes": [
+    {
+      "sceneId": 0,
+      "title": "entrata principale",
+      "panorama":"panorama/IMG_20240926_152652_00_002_PureShot.jpg",
+      "hotSpots": [
+        {
+         "type": "scene",
+         "text":"edificio 1.0 - 1",
+         "left": 2300,
+         "top": 1200,
+         "freaccia": 2,
+         "sceneId": 1
+         },
+         {
+         "type": "scene",
+         "text":"giardino",
+         "left": 1600,
+         "top": 1200,
+         "freaccia": 1,
+         "sceneId": 29
+         },
+         {
+          "type": "info",
+          "tipo": "video",
+          "left": 2800,
+          "top": 1100,
+          "video":"info/dipartimento-DIN.mp4"
+         }
+      ]
+    },
+    {
+      "sceneId": 1,
+      "title": "edificio 1.0 - 1",
+      "panorama":"panorama/IMG_20240926_152855_00_003_PureShot.jpg",
+      "hotSpots": [
+        {
+         "type": "scene",
+         "text":"entrata principale",
+         "left": 150,
+         "top": 1200,
+         "sceneId": 0
+         },
+         {
+         "type": "scene",
+         "text":"edificio 1.0 - 2",
+         "left": 2600,
+         "top": 1200,
+         "sceneId": 2
+         },
+         {
+          "type": "info",
+          "tipo": "immagine",
+          "left": 2350,
+          "top": 1000,
+          "immagine": "info/monumento-alla-vittoria.jpg"                            
+         }
+      ]
+    },
+    {
+      "sceneId": 2,
+      "title": "edificio 1.0 - 2",
+      "panorama":"panorama/IMG_20240926_153001_00_004_PureShot.jpg",
+      "hotSpots": [
+        {
+          "type": "scene",
+          "sceneId": 4,
+          "left": 3520,
+          "top": 1180,
+          "text": "edificio 1.0 - esterno 1"
+        },
+        {
+          "type": "scene",
+          "sceneId": 3,
+          "left": 2200,
+          "top": 1250,
+          "text": "edificio 1.0 - 3"
+         },
+         {
+          "type": "scene",
+          "sceneId": 1,
+          "left": 950,
+          "top": 1450,
+          "text": "edificio 1.0 - 1"
+         },
+        {
+          "type": "info",
+          "tipo": "testo",
+          "left": 3900,
+          "top": 1100,
+          "text": "orario del bar:\n lun-ven: 7:30-17:00\n sab: chiuso\n dom: chiuso"
+        }
+      ]
+    },
+    {
+      "sceneId": 3,
+      "title": "edificio 1.0 - 3",
+      "panorama":"panorama/IMG_20240926_153115_00_005_PureShot.jpg",
+      "hotSpots": [
+        {
+         "type": "scene",
+         "sceneId": 2,
+         "left": 3350,
+         "top": 1180,
+         "text": "edificio 1.0 - 2"
+        }
+      ]
+    },
+    {
+      "sceneId": 4,
+      "title": "edificio 1.0 - esterno 1",
+      "panorama":"panorama/IMG_20240926_154719_00_020_PureShot.jpg",
+      "hotSpots": [
+        {
+         "type": "scene",
+         "sceneId": 2,
+         "left": 1900,
+         "top": 1180,
+         "text": "edificio 1.0 - 2"
+       },
+       {
+         "type":"info",
+         "tipo":"immagine",
+         "left": 10,
+         "top": 1100,
+         "immagine":"info/monumento-ai-morti.jpg"
+       }
+      ]
+    },
+    
+    {
+      "sceneId": 29,
+      "title": "giardino",
+      "panorama":"panorama/IMG_20240926_160058_00_031_PureShot.jpg",
+      "hotSpots": [
+        {
+         "type": "scene",
+         "sceneId": 0,
+         "left": 3350,
+         "top": 1180,
+         "text": "entrata principale"
+       }
+      ]
+    }
+  ]
+}
